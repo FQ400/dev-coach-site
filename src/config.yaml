@@ -1,0 +1,35 @@
+baseURL: "http://localhost:1313/"
+googleAnalytics: ""
+languageCode: "en-us"
+theme: "minimal"
+title: "TDD-Coach Blog"
+
+# Theme Params
+params:
+  accent: "blue"
+  author: ""
+  backgroundColor: "white"
+  copyright: "Copyright ..."
+  description: "some description"
+  font: "Open Sans" # should match the name on Google Fonts!
+  githubUsername: "#"
+  highlight: false
+  highlightLanguages: ["go", "javascript"]
+  highlightStyle: "default"
+  profilePic: 'profile_pic.jpg'
+  showBorder: true
+  mathJax: false
+  css: []
+  js: []
+
+menu:
+  main:
+  - { name: "Home", url: "/", weight: 1 }
+  - { name: "Posts", url: "/posts/", weight: 2 }
+  - { name: "About", url: "/about", weight: 3 }
+  icon:
+    # name is the name of a font awesome icon
+    # TODO extract used icons and remove library
+    - { url: "https://twitter.com/username/", name: "twitter", weight: 3 }
+    - { url: "https://github.com/username/", name: "github", weight: 2 }
+    - { url: "mailto:me@example.com", name: "envelope-o", weight: 1 }
