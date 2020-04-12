@@ -5,6 +5,9 @@ The purpose of this blog is to build up credibility and help others to understan
 
 ## Development
 
+The repository uses git submodules. The theme in `src/theme/minimal` is a submodule.
+Therefor clone the repository using `git clone --recursive ...`.
+
 Hugo runs in a Docker Container. See `Dockerfile` and `Makefile`
 
 Files are mounted into the container.
