@@ -1,6 +1,6 @@
 # TDDCoach Blog
 
-The purpose of this blog is to build up credibility and help others to understand programming and software engineering.
+The purpose of this blog is to build up credibility and help others to understand TDD (Test-Driven Development), programming and software engineering.
 
 
 ## Development
