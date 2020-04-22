@@ -11,7 +11,7 @@ params:
   backgroundColor: "white"
   copyright: "Copyright ..."
   description: "some description"
-  font: "Open Sans" # should match the name on Google Fonts!
+  font: "Open Sans, Helvetica, Arial, sans-serif"
   githubUsername: "#"
   highlight: false
   highlightLanguages: ["go", "javascript"]
