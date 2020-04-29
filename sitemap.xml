@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>//fq400.github.io/tddcoach-site/</loc>
     <lastmod>2020-04-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/imprint/</loc>
+    <loc>//fq400.github.io/tddcoach-site/imprint/</loc>
     <lastmod>2020-04-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>//fq400.github.io/tddcoach-site/about/</loc>
     <lastmod>2020-04-11T12:56:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>//fq400.github.io/tddcoach-site/categories/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>//fq400.github.io/tddcoach-site/tags/</loc>
   </url>
   
 </urlset>
