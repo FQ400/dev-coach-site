@@ -33,3 +33,5 @@ menu:
     - { url: "https://twitter.com/username/", name: "twitter", weight: 3 }
     - { url: "https://github.com/username/", name: "github", weight: 2 }
     - { url: "mailto:me@example.com", name: "envelope-o", weight: 1 }
+  footer:
+    - { name: "Imprint", url: "/imprint", weight: 1 }

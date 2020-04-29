@@ -1,9 +1,16 @@
         <footer>
-            <p class="copyright text-muted">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Minimal](https://github.com/calintat/minimal)." | markdownify }}</p>
+          {{ if .Site.Menus.footer }}
+            <ul>
+              {{ range sort .Site.Menus.footer }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+          <p class="copyright text-muted text-center">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Minimal](https://github.com/calintat/minimal)." | markdownify }}</p>
         </footer>
 
         {{ partial "body-close" . }}
-        
+
     </body>
 
 </html>

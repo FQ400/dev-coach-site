@@ -104,5 +104,8 @@ a:hover {
 
 footer {
     border-bottom: var(--border-width) solid var(--accent);
-    text-align: center;
+}
+
+footer ul {
+    list-style: none;
 }
