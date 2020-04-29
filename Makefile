@@ -14,3 +14,10 @@ run_dev_server:
        --volume $(shell pwd)/public:/public \
        --volume $(shell pwd)/scripts:/scripts \
 	   tddcoach-hugo /scripts/dev_server.sh
+
+build_page:
+	docker run \
+       --volume $(shell pwd)/src:/src \
+       --volume $(shell pwd)/public:/public \
+       --volume $(shell pwd)/scripts:/scripts \
+	   tddcoach-hugo /scripts/build_page.sh
