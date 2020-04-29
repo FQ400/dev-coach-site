@@ -1,7 +1,7 @@
 ---
 title: "Imprint"
 date: 2020-04-15
-draft: true
+draft: false
 ---
 
 ### Contact
