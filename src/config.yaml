@@ -2,15 +2,15 @@ baseURL: "http://localhost:1313/"
 googleAnalytics: ""
 languageCode: "en-us"
 theme: "minimal"
-title: "TDD-Coach Blog"
+title: "TDD-Coach"
 
 # Theme Params
 params:
   accent: "blue"
   author: ""
   backgroundColor: "white"
-  copyright: "Copyright ..."
-  description: "some description"
+  copyright: "Copyright 2020 - Carsten Lamm"
+  description: "TDD, Testing, Programming and Learning"
   font: "Open Sans, Helvetica, Arial, sans-serif"
   githubUsername: "#"
   highlight: false
@@ -30,8 +30,8 @@ menu:
   icon:
     # name is the name of a font awesome icon
     # TODO extract used icons and remove library
-    - { url: "https://twitter.com/username/", name: "twitter", weight: 3 }
-    - { url: "https://github.com/username/", name: "github", weight: 2 }
-    - { url: "mailto:me@example.com", name: "envelope-o", weight: 1 }
+    - { url: "https://twitter.com/FQ400", name: "twitter", weight: 3 }
+    - { url: "https://github.com/FQ400", name: "github", weight: 2 }
+    #- { url: "mailto:me@example.com", name: "envelope-o", weight: 1 }
   footer:
     - { name: "Imprint", url: "/imprint", weight: 1 }
