@@ -20,4 +20,7 @@ build_page:
        --volume $(shell pwd)/src:/src \
        --volume $(shell pwd)/public:/public \
        --volume $(shell pwd)/scripts:/scripts \
-	   tddcoach-hugo /scripts/build_page.sh
+	   tddcoach-hugo /scripts/build_page.sh \
+
+publish:
+	scripts/publish_to_ghpages.sh

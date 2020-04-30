@@ -13,7 +13,7 @@ Hugo runs in a Docker Container. See `Dockerfile` and `Makefile`
 Files are mounted into the container.
 - `src/` contains the blog relevant files
 - `public/` contains the build result
-- `scripts/` contain scripts that run inside the container
+- `scripts/` contain scripts that automate tasks
 
 
 ### Run locally
@@ -26,4 +26,15 @@ Files are mounted into the container.
 ### File structure
 
 ... to be continued...
+
+
+## Deployment
+
+The page is hosted on github using Github pages.
+
+URL: https://fq400.github.io/tddcoach-site/
+
+`make publish` builds the page and deploys it to Github.
+
+
 
