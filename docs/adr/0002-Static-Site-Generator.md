@@ -1,4 +1,6 @@
-# Using Static Site Generator
+# 0002 Using Static Site Generator
+
+Date: 01-04-2020
 
 ## Status
 

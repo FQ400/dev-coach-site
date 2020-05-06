@@ -1,4 +1,6 @@
-# Using Architecture Decission Records (ADR)
+# 0001 Using Architecture Decission Records (ADR)
+
+Date: 01-04-2020
 
 This is the template in [Documenting architecture decisions - Michael Nygard](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions).
 You can use [adr-tools](https://github.com/npryce/adr-tools) for managing the ADR files.
@@ -7,9 +9,9 @@ This is based on this template: https://github.com/joelparkerhenderson/architect
 
 The filename structures as the following: 
 ```
-<YYYY-MM-DD>-<number>-<short-title>.md
+<number>-<short-title>.md
 
-2020-04-01-00-Using-ADT.md
+0001-Using-ADT.md
 ```
 
 ## Status
