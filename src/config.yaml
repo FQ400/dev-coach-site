@@ -19,7 +19,7 @@ params:
   profilePic: 'profile_pic.jpg'
   showBorder: true
   mathJax: false
-  css: []
+  css: ["custom.css"]
   js: []
 
 menu:
