@@ -7,7 +7,7 @@ draft: false
 
 ## About me
 
-{{< figure src="/profile_pic.jpg" width="200" class="mb-20" >}}
+{{< figure src="/static/profile_pic.jpg" width="200" class="mb-20" >}}
 
 - 10 years of experience in software development (web)
 - polyglot developer using modern development practices in HTML, CSS, Javascript, Ruby, Golang or Python
