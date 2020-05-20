@@ -6,10 +6,19 @@
     <description>Recent content on TDD-Coach</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//fq400.github.io/tddcoach-site/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About TDD-Coach</title>
+      <link>//fq400.github.io/tddcoach-site/about/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fq400.github.io/tddcoach-site/about/</guid>
+      <description>About me   10 years of experience in software development (web) polyglot developer using modern development practices in HTML, CSS, Javascript, Ruby, Golang or Python practicing XP, TDD, Refactoring and Software Crafting have/had the roles: Student, Software Engineer, Lead Software Engineer, CTO at kontextR, Freelance Consultant  About this website  built using Hugo static site generator used a forked version of the minimal theme imprint help by language-boutique website source on github  </description>
+    </item>
     
     <item>
       <title>Imprint</title>
@@ -26,16 +35,6 @@ Phone: +49 151 7272 6952
 VAT-ID: DE294492063
 Legal disclaimer The contents of these pages were prepared with utmost care. Nonetheless, we cannot assume liability for the timeless accuracy and completeness of the information.
 Our website contains links to external websites. As the contents of these third-party websites are beyond our control, we cannot accept liability for them. Responsibility for the contents of the linked pages is always held by the provider or operator of the pages.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//fq400.github.io/tddcoach-site/about/</link>
-      <pubDate>Sat, 11 Apr 2020 12:56:00 +0000</pubDate>
-      
-      <guid>//fq400.github.io/tddcoach-site/about/</guid>
-      <description>About this website The website is built using the Hugo static site generator with a forked version of the minimal theme.
-The sources of this blog can be found on github &amp;hellip;</description>
     </item>
     
   </channel>
