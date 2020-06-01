@@ -2,7 +2,7 @@
 title: "Setting up this website"
 description: "I like to share my learnings setting up this page."
 date: 2020-06-01
-draft: true
+draft: false
 tags: ["learning", "git", "submodules"]
 ---
 
