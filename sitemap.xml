@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//fq400.github.io/tddcoach-site/tags/git/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fq400.github.io/tddcoach-site/tags/learning/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fq400.github.io/tddcoach-site/posts/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fq400.github.io/tddcoach-site/posts/setting-up-this-website/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fq400.github.io/tddcoach-site/tags/submodules/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fq400.github.io/tddcoach-site/tags/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//fq400.github.io/tddcoach-site/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
   </url>
@@ -19,10 +49,6 @@
   
   <url>
     <loc>//fq400.github.io/tddcoach-site/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>//fq400.github.io/tddcoach-site/tags/</loc>
   </url>
   
 </urlset>
