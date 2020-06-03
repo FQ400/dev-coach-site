@@ -12,14 +12,14 @@
     
     
     <item>
-      <title>Setting up this website</title>
+      <title>Setting up a Hugo page made me work with git submodules</title>
       <link>//fq400.github.io/tddcoach-site/posts/setting-up-this-website/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>//fq400.github.io/tddcoach-site/posts/setting-up-this-website/</guid>
-      <description>When I set this blog up I struggled a bit with git and its submodule feature. I used git version 2.26.2. Here is my experience.
-Exchange a Git Submodule When using Hugo with themes Git submodules come into play. This blog uses the minimal theme. When I set it up, I used the original theme. Later I decided to fork the theme&amp;rsquo;s repo to make adjustments.
-The submodule was already in place and I wanted to exchange the source of the submodule.</description>
+      <description>This blog is using Hugo with the minimal theme. I followed the README on how to integrate a theme into a Hugo site. It mentioned git submodules, so I added a submodule.
+Working with submodules is inconvenient and I decided not to use them. For instance, every time I change something in the submodule, I have to commit the latest commit reference to the main repo.
+I used git version 2.</description>
     </item>
     
     <item>

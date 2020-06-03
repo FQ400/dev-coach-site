@@ -5,7 +5,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Setting up this website</title>
+        <title>Setting up a Hugo page made me work with git submodules</title>
         
         <style>
 
@@ -66,7 +66,7 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand visible-xs" href="#">Setting up this website</a>
+                    <a class="navbar-brand visible-xs" href="#">Setting up a Hugo page made me work with git submodules</a>
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -102,25 +102,28 @@
 <main>
 
     <div>
-        <h2>Setting up this website</h2>
+        <h2>Setting up a Hugo page made me work with git submodules</h2>
         <h5>I like to share my learnings setting up this page.</h5>
         
 <a href="//fq400.github.io/tddcoach-site/tags/learning"><kbd class="item-tag">learning</kbd></a>
 
 <a href="//fq400.github.io/tddcoach-site/tags/git"><kbd class="item-tag">git</kbd></a>
 
-<a href="//fq400.github.io/tddcoach-site/tags/submodules"><kbd class="item-tag">submodules</kbd></a>
+<a href="//fq400.github.io/tddcoach-site/tags/submodule"><kbd class="item-tag">submodule</kbd></a>
 
 
     </div>
 
-    <div align="start" class="content"><p>When I set this blog up I struggled a bit with git and its submodule feature.
-I used git version <code>2.26.2</code>. Here is my experience.</p>
+    <div align="start" class="content"><p>This blog is using <a href="https://gohugo.io/">Hugo</a> with the minimal theme.
+I followed the <a href="https://github.com/calintat/minimal">README</a> on how to integrate a theme into a Hugo site.
+It mentioned git submodules, so I added a submodule.</p>
+<p>Working with submodules is inconvenient and I decided not to use them. For instance, every time I change something in the submodule,
+I have to commit the latest commit reference to the main repo.</p>
+<p>I used git version <code>2.26.2</code>. Here is my experience.</p>
 <h2 id="exchange-a-git-submodule">Exchange a Git Submodule</h2>
-<p>When using Hugo with themes Git submodules come into play.
-This blog uses the minimal theme. When I set it up, I used the original theme.
+<p>This blog uses the minimal theme. When I set it up, I used the original theme.
 Later I decided to fork the theme&rsquo;s repo to make adjustments.</p>
-<p>The submodule was already in place and I wanted to exchange the source of the submodule.
+<p>The problem was, the submodule was already in place and I wanted to exchange the source of the submodule.
 The place of the submodule is in <code>src/themes/minimal</code>.
 References to the submodules can be found in two files.</p>
 <p><code>.gitmodules</code>:</p>
@@ -133,14 +136,15 @@ References to the submodules can be found in two files.</p>
 	active = true
 </code></pre><p>I had to remove both entries to be able to reinitialize a new submodule with the <strong>same name</strong> in the <strong>same place</strong>.
 From the root directory, I did <code>git submodule add https://github.com/FQ400/minimal themes/minimal</code></p>
+<p>Later in the process, I decided against submodules and needed to remove it.</p>
 <h2 id="remove-a-git-submodule">Remove a Git Submodule</h2>
-<p>I decided against Git submodules in <a href="https://github.com/FQ400/tddcoach-site/blob/master/docs/adr/0004-Git-Submodules.md">ADR 0004</a>
-and needed to remove it.</p>
+<p>My reasons against Git submodules are mentioned in <a href="https://github.com/FQ400/tddcoach-site/blob/master/docs/adr/0004-Git-Submodules.md">ADR 0004</a>.
+I wanted to remove the submodule without losing my git history.</p>
 <p>To remove the reference of the submodule, I removed the entry from <code>.git/config</code>, the file <code>.gitmodules</code> and the directory <code>.git/modules/minimal</code>.</p>
-<p><strong>The submodule is still there. Checking with <code>git submodule</code></strong></p>
+<p><strong>Checking with <code>git submodule</code>, the submodule is still there.</strong></p>
 <p>The next idea was to remove the local repo and clone it again.</p>
-<p><strong>The submodule is still there.</strong> How?</p>
-<p>As it turned out submodule references are stored in commits. Now it was about to find the respective commit.</p>
+<p><strong>Checking with <code>git submodule</code>, the submodule is still there.</strong> How?</p>
+<p>As it turned out submodule references are stored in commits. Now all I needed to do was to find the respective commit.</p>
 <p>A <code>git log --oneline --graph --decorate</code> lists all my commits:</p>
 <pre><code>* 11192a7 (HEAD -&gt; master, origin/master, origin/HEAD) WIP
 * 275d582 Update submodule theme                           &lt;-- COMMIT NOT NEEDED
@@ -193,8 +197,8 @@ index 0000000..c50ae4a
 +++ b/src/themes/minimal
 @@ -0,0 +1 @@
 +Subproject commit c50ae4adf79f2c43262c035704a6124cff8e8b9a
-</code></pre><p>With that modification I used <code>git am &lt; *.patch</code> in a newly created repo to apply all patch files.</p>
-<p><strong>The submodule is gone. DONE</strong></p>
+</code></pre><p>With that modification, I used <code>git am &lt; *.patch</code> in a newly created repo to apply all patch files.</p>
+<p><strong>Checking with <code>git submodule</code>, the submodule is gone. DONE</strong></p>
 <p>I found multiple answers on <a href="https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule/36593218">Stackoverflow</a>.
 That shows that there are multiple ways of solving the issue. Removing git submodules is <strong>not</strong> an easy task.</p>
 </div>
