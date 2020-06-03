@@ -1,22 +1,28 @@
 ---
-title: "Setting up this website"
+title: "Setting up a Hugo page made me work with git submodules"
 description: "I like to share my learnings setting up this page."
 date: 2020-06-01
 draft: false
-tags: ["learning", "git", "submodules"]
+tags: ["learning", "git", "submodule"]
 ---
 
-When I set this blog up I struggled a bit with git and its submodule feature.
-I used git version `2.26.2`. Here is my experience.
+This blog is using [Hugo](https://gohugo.io/) with the minimal theme.
+I followed the [README](https://github.com/calintat/minimal) on how to integrate a theme into a Hugo site.
+It mentioned git submodules, so I added a submodule with the original repo URL.
+
+I got comfortable with the ecosystem. So I wanted to adapt the theme to my needs, which led me to fork the theme repo.
+
+After changing some code in the submodule I realized working with a submodule is a bit inconvenient and I decided to remove it.
+For instance, every time I change something in the submodule,
+I have to commit the change in the submodule and I have to create a new commit with the reference of the submodule's commit in the main repo.
+
+I used git in version `2.26.2` for this post.
 
 
-## Exchange a Git Submodule
+## Exchanging a Git Submodule
 
-When using Hugo with themes Git submodules come into play.
-This blog uses the minimal theme. When I set it up, I used the original theme.
-Later I decided to fork the theme's repo to make adjustments.
-
-The submodule was already in place and I wanted to exchange the source of the submodule.
+The problem was, replacing the original submodule with my forked version with the same name.
+It means I had to exchange the remote URLs.
 The place of the submodule is in `src/themes/minimal`.
 References to the submodules can be found in two files.
 
@@ -37,21 +43,24 @@ References to the submodules can be found in two files.
 I had to remove both entries to be able to reinitialize a new submodule with the **same name** in the **same place**.
 From the root directory, I did `git submodule add https://github.com/FQ400/minimal themes/minimal`
 
+Later in the process, I decided against submodules and needed to remove it.
 
-## Remove a Git Submodule
 
-I decided against Git submodules in [ADR 0004](https://github.com/FQ400/tddcoach-site/blob/master/docs/adr/0004-Git-Submodules.md)
-and needed to remove it.
+## Removing a Git Submodule
+
+My reasons against Git submodules are mentioned in [ADR 0004](https://github.com/FQ400/tddcoach-site/blob/master/docs/adr/0004-Git-Submodules.md).
+I wanted to remove the submodule without losing my git history.
 
 To remove the reference of the submodule, I removed the entry from `.git/config`, the file `.gitmodules` and the directory `.git/modules/minimal`.
 
-**The submodule is still there. Checking with `git submodule`**
+
+**Checking with `git submodule`, the submodule is still there.**
 
 The next idea was to remove the local repo and clone it again.
 
-**The submodule is still there.** How?
+**Checking with `git submodule`, the submodule is still there.** How?
 
-As it turned out submodule references are stored in commits. Now it was about to find the respective commit.
+As it turned out submodule references are stored in commits. Now all I needed to do was to find the respective commit.
 
 A `git log --oneline --graph --decorate` lists all my commits:
 
@@ -121,9 +130,9 @@ index 0000000..c50ae4a
 +Subproject commit c50ae4adf79f2c43262c035704a6124cff8e8b9a
 ```
 
-With that modification I used `git am < *.patch` in a newly created repo to apply all patch files.
+With that modification, I used `git am < *.patch` in a newly created repo to apply all patch files.
 
-**The submodule is gone. DONE**
+**Checking with `git submodule`, the submodule is gone. DONE**
 
 I found multiple answers on [Stackoverflow](https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule/36593218).
 That shows that there are multiple ways of solving the issue. Removing git submodules is **not** an easy task.
