@@ -17,9 +17,9 @@
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>//fq400.github.io/tddcoach-site/posts/setting-up-this-website/</guid>
-      <description>This blog is using Hugo with the minimal theme. I followed the README on how to integrate a theme into a Hugo site. It mentioned git submodules, so I added a submodule.
-Working with submodules is inconvenient and I decided not to use them. For instance, every time I change something in the submodule, I have to commit the latest commit reference to the main repo.
-I used git version 2.</description>
+      <description>This blog is using Hugo with the minimal theme. I followed the README on how to integrate a theme into a Hugo site. It mentioned git submodules, so I added a submodule with the original repo URL.
+I got comfortable with the ecosystem. So I wanted to adapt the theme to my needs, which led me to fork the theme repo.
+After changing some code in the submodule I realized working with a submodule is a bit inconvenient and I decided to remove it.</description>
     </item>
     
   </channel>

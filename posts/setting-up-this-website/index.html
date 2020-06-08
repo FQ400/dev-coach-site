@@ -116,14 +116,15 @@
 
     <div align="start" class="content"><p>This blog is using <a href="https://gohugo.io/">Hugo</a> with the minimal theme.
 I followed the <a href="https://github.com/calintat/minimal">README</a> on how to integrate a theme into a Hugo site.
-It mentioned git submodules, so I added a submodule.</p>
-<p>Working with submodules is inconvenient and I decided not to use them. For instance, every time I change something in the submodule,
-I have to commit the latest commit reference to the main repo.</p>
-<p>I used git version <code>2.26.2</code>. Here is my experience.</p>
-<h2 id="exchange-a-git-submodule">Exchange a Git Submodule</h2>
-<p>This blog uses the minimal theme. When I set it up, I used the original theme.
-Later I decided to fork the theme&rsquo;s repo to make adjustments.</p>
-<p>The problem was, the submodule was already in place and I wanted to exchange the source of the submodule.
+It mentioned git submodules, so I added a submodule with the original repo URL.</p>
+<p>I got comfortable with the ecosystem. So I wanted to adapt the theme to my needs, which led me to fork the theme repo.</p>
+<p>After changing some code in the submodule I realized working with a submodule is a bit inconvenient and I decided to remove it.
+For instance, every time I change something in the submodule,
+I have to commit the change in the submodule and I have to create a new commit with the reference of the submodule&rsquo;s commit in the main repo.</p>
+<p>I used git in version <code>2.26.2</code> for this post.</p>
+<h2 id="exchanging-a-git-submodule">Exchanging a Git Submodule</h2>
+<p>The problem was, replacing the original submodule with my forked version with the same name.
+It means I had to exchange the remote URLs.
 The place of the submodule is in <code>src/themes/minimal</code>.
 References to the submodules can be found in two files.</p>
 <p><code>.gitmodules</code>:</p>
@@ -137,7 +138,7 @@ References to the submodules can be found in two files.</p>
 </code></pre><p>I had to remove both entries to be able to reinitialize a new submodule with the <strong>same name</strong> in the <strong>same place</strong>.
 From the root directory, I did <code>git submodule add https://github.com/FQ400/minimal themes/minimal</code></p>
 <p>Later in the process, I decided against submodules and needed to remove it.</p>
-<h2 id="remove-a-git-submodule">Remove a Git Submodule</h2>
+<h2 id="removing-a-git-submodule">Removing a Git Submodule</h2>
 <p>My reasons against Git submodules are mentioned in <a href="https://github.com/FQ400/tddcoach-site/blob/master/docs/adr/0004-Git-Submodules.md">ADR 0004</a>.
 I wanted to remove the submodule without losing my git history.</p>
 <p>To remove the reference of the submodule, I removed the entry from <code>.git/config</code>, the file <code>.gitmodules</code> and the directory <code>.git/modules/minimal</code>.</p>
