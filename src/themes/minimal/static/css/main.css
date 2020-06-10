@@ -41,6 +41,11 @@ img {
     padding-top: 20px;
 }
 
+.dates {
+    font-size: 75%;
+    color: #999;
+}
+
 /* Profile picture */
 
 .profile {

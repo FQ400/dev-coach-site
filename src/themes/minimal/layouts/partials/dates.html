@@ -1,0 +1,15 @@
+<p class='dates'>
+  <i>
+    Created at
+    <time dateime="{{ .Date }}">
+      {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") }}
+    </time>
+    {{ if .Lastmod }}
+      <br />
+      Updated at
+      <time dateime="{{ .Lastmod }}">
+        {{ .Lastmod.Format (.Site.Params.dateFormat | default "January 2, 2006") }}
+      </time>
+    {{ end }}
+  </i>
+</p>

@@ -1,7 +1,7 @@
 ---
 title: "Setting up a Hugo page made me work with git submodules"
-description: "I like to share my learnings setting up this page."
 date: 2020-06-01
+lastmod: 2020-06-10
 draft: false
 tags: ["learning", "git", "submodule"]
 ---

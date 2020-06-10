@@ -11,6 +11,7 @@ params:
   backgroundColor: "white"
   copyright: "Copyright 2020 - Carsten Lamm"
   description: "TDD, Testing, Programming and Learning"
+  dateFormat: "January 2, 2006"
   font: "Open Sans, Helvetica, Arial, sans-serif"
   githubUsername: "#"
   highlight: false
