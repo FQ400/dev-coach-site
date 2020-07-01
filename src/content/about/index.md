@@ -1,6 +1,6 @@
 ---
-title: "About TDD-Coach"
-description: "Who is behind TDD-Coach?"
+title: "About DEV-Coach"
+description: "Who is behind Dev-Coach?"
 date: 2020-05-20
 draft: false
 ---
@@ -20,5 +20,5 @@ draft: false
 - built using [Hugo static site generator](https://gohugo.io/)
 - used a [forked version](https://github.com/FQ400/minimal) of the [minimal theme](https://themes.gohugo.io/minimal/)
 - imprint help by [language-boutique](https://language-boutique.com/lost-in-translation-full-reader/impressum-or-imprint.html)
-- website source on [github](https://github.com/FQ400/tddcoach-site)
+- website source on [github](https://github.com/FQ400/dev-coach-site)
 

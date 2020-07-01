@@ -1,4 +1,4 @@
-# TDDCoach Blog
+# Dev-Coach Site
 
 The purpose of this blog is to build up credibility and help others to understand TDD (Test-Driven Development), programming and software engineering.
 
@@ -32,7 +32,7 @@ Files are mounted into the container.
 
 The page is hosted on github using Github pages.
 
-URL: https://fq400.github.io/tddcoach-site/
+URL: https://fq400.github.io/dev-coach-site/
 
 `make publish` builds the page and deploys it to Github.
 

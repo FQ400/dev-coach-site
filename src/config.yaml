@@ -2,7 +2,7 @@ baseURL: "http://localhost:1313/"
 googleAnalytics: ""
 languageCode: "en-us"
 theme: "minimal"
-title: "TDD-Coach"
+title: "Dev-Coach"
 
 # Theme Params
 params:
