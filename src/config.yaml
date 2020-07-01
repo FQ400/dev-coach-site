@@ -14,9 +14,9 @@ params:
   dateFormat: "January 2, 2006"
   font: "Open Sans, Helvetica, Arial, sans-serif"
   githubUsername: "#"
-  highlight: false
-  highlightLanguages: ["go", "javascript"]
-  highlightStyle: "default"
+  highlight: true
+  highlightLanguages: ["javascript"]
+  highlightStyle: "gruvbox-dark"
   profilePic: 'profile_pic.jpg'
   showBorder: true
   mathJax: false
@@ -27,7 +27,8 @@ menu:
   main:
   - { name: "Home", url: "/", weight: 1 }
   - { name: "Posts", url: "/posts/", weight: 2 }
-  - { name: "About", url: "/about", weight: 3 }
+  - { name: "Snippets", url: "/snippets/", weight: 3 }
+  - { name: "About", url: "/about", weight: 4 }
   icon:
     # name is the name of a font awesome icon
     # TODO extract used icons and remove library

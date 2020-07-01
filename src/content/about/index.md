@@ -22,4 +22,3 @@ draft: false
 - used a [forked version](https://github.com/FQ400/minimal) of the [minimal theme](https://themes.gohugo.io/minimal/)
 - imprint help by [language-boutique](https://language-boutique.com/lost-in-translation-full-reader/impressum-or-imprint.html)
 - website source on [github](https://github.com/FQ400/dev-coach-site)
-
