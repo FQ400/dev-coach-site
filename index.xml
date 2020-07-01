@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TDD-Coach</title>
+    <title>Dev-Coach</title>
     <link>//fq400.github.io/tddcoach-site/</link>
-    <description>Recent content on TDD-Coach</description>
+    <description>Recent content on Dev-Coach</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
@@ -23,7 +23,7 @@ After changing some code in the submodule I realized working with a submodule is
     </item>
     
     <item>
-      <title>About TDD-Coach</title>
+      <title>About DEV-Coach</title>
       <link>//fq400.github.io/tddcoach-site/about/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
