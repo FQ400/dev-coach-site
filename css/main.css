@@ -20,9 +20,9 @@ img {
 }
 
 /* Homepage */
-
-.intro {
-    transform: translateY(22vh);
+.intro > img {
+    display: block;
+    margin: 0 auto;
 }
 
 .intro > h1 {
