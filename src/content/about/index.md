@@ -1,7 +1,8 @@
 ---
-title: "About DEV-Coach"
+title: "About Dev-Coach"
 description: "Who is behind Dev-Coach?"
 date: 2020-05-20
+lastmod: 2020-07-01
 draft: false
 ---
 
