@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Dev-Coach</title>
-    <link>//fq400.github.io/dev-coach-site/tags/</link>
+    <link>//dev-coach.me/tags/</link>
     <description>Recent content in Tags on Dev-Coach</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="//fq400.github.io/dev-coach-site/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//dev-coach.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>git</title>
-      <link>//fq400.github.io/dev-coach-site/tags/git/</link>
+      <link>//dev-coach.me/tags/git/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>//fq400.github.io/dev-coach-site/tags/git/</guid>
+      <guid>//dev-coach.me/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>learning</title>
-      <link>//fq400.github.io/dev-coach-site/tags/learning/</link>
+      <link>//dev-coach.me/tags/learning/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>//fq400.github.io/dev-coach-site/tags/learning/</guid>
+      <guid>//dev-coach.me/tags/learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>submodule</title>
-      <link>//fq400.github.io/dev-coach-site/tags/submodule/</link>
+      <link>//dev-coach.me/tags/submodule/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>//fq400.github.io/dev-coach-site/tags/submodule/</guid>
+      <guid>//dev-coach.me/tags/submodule/</guid>
       <description></description>
     </item>
     
