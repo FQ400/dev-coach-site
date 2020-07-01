@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dev-Coach</title>
-    <link>//fq400.github.io/dev-coach-site/</link>
+    <link>//dev-coach.me/</link>
     <description>Recent content on Dev-Coach</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="//fq400.github.io/dev-coach-site/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//dev-coach.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting up a Hugo page made me work with git submodules</title>
-      <link>//fq400.github.io/dev-coach-site/posts/setting-up-this-website/</link>
+      <link>//dev-coach.me/posts/setting-up-this-website/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>//fq400.github.io/dev-coach-site/posts/setting-up-this-website/</guid>
+      <guid>//dev-coach.me/posts/setting-up-this-website/</guid>
       <description>This blog is using Hugo with the minimal theme. I followed the README on how to integrate a theme into a Hugo site. It mentioned git submodules, so I added a submodule with the original repo URL.
 I got comfortable with the ecosystem. So I wanted to adapt the theme to my needs, which led me to fork the theme repo.
 After changing some code in the submodule I realized working with a submodule is a bit inconvenient and I decided to remove it.</description>
@@ -24,19 +24,19 @@ After changing some code in the submodule I realized working with a submodule is
     
     <item>
       <title>About DEV-Coach</title>
-      <link>//fq400.github.io/dev-coach-site/about/</link>
+      <link>//dev-coach.me/about/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>//fq400.github.io/dev-coach-site/about/</guid>
+      <guid>//dev-coach.me/about/</guid>
       <description>About me   10 years of experience in software development (web) polyglot developer using modern development practices in HTML, CSS, Javascript, Ruby, Golang or Python practicing XP, TDD, Refactoring and Software Crafting have/had the roles: Student, Software Engineer, Lead Software Engineer, CTO at kontextR, Freelance Consultant  About this website  built using Hugo static site generator used a forked version of the minimal theme imprint help by language-boutique website source on github  </description>
     </item>
     
     <item>
       <title>Imprint</title>
-      <link>//fq400.github.io/dev-coach-site/imprint/</link>
+      <link>//dev-coach.me/imprint/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>//fq400.github.io/dev-coach-site/imprint/</guid>
+      <guid>//dev-coach.me/imprint/</guid>
       <description>Contact Carsten Lamm
 Gaiglstr. 23
 80335 Munich
