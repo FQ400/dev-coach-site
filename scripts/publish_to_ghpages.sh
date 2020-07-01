@@ -21,6 +21,9 @@ rm -rf public/*
 echo "Generating site"
 make build_page
 
+echo "Copy CNAME to public dir"
+cp CNAME public/
+
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (`git rev-parse --short HEAD`)"
 

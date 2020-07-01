@@ -1,3 +1,3 @@
 #!/bin/sh
 
-hugo --destination="../public" --baseURL="//fq400.github.io/dev-coach-site/"
+hugo --destination="../public" --baseURL="//dev-coach.me"
