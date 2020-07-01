@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Async/Await and Array.forEach</title>
+      <link>//dev-coach.me/snippets/looping-async-await-in-javascript/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/snippets/looping-async-await-in-javascript/</guid>
+      <description>Assuming we have two async calls to a database that return a promise. asyncDbCall1 takes longer then asyncDbCall2.
+const asyncDbCall1 = () =&amp;gt; { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { resolve(1) }, 200); }) }; const asyncDbCall2 = () =&amp;gt; { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { resolve(2) }, 100); }) }; Calling them in sequence using Array.forEach:
+[asyncDbCall1, asyncDbCall2].forEach(async (promise) =&amp;gt; { const data = await promise(); console.</description>
+    </item>
+    
+    <item>
       <title>Setting up a Hugo page made me work with git submodules</title>
       <link>//dev-coach.me/posts/setting-up-this-website/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
