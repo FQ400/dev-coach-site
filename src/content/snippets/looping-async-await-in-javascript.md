@@ -38,6 +38,8 @@ console.log("DONE");
 // 1
 ```
 
+I want to finish the calls in sequence.
+
 Using a `for` loop:
 
 ```javascript
