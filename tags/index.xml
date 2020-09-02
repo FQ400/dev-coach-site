@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Dev-Coach</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//dev-coach.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>commands</title>
+      <link>//dev-coach.me/tags/commands/</link>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/commands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snippets</title>
+      <link>//dev-coach.me/tags/snippets/</link>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/snippets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>//dev-coach.me/tags/vim/</link>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>//dev-coach.me/tags/workflow/</link>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/workflow/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>async</title>
@@ -35,15 +71,6 @@
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>//dev-coach.me/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>snippets</title>
-      <link>//dev-coach.me/tags/snippets/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>//dev-coach.me/tags/snippets/</guid>
       <description></description>
     </item>
     
