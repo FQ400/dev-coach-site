@@ -17,9 +17,9 @@
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>//dev-coach.me/snippets/redrawing-vim-screen/</guid>
-      <description>Part of my current workflow for web development is writing code in NeoVim in a Terminal on one screen and checking results in the browser on another screen. The screens are virtual and I can change them using the &amp;lt;Cmd&amp;gt; ← and &amp;lt;Cmd&amp;gt; →.
-Reloading the browser tab I use &amp;lt;Cmd&amp;gt; R.
-When switching screens and reloading is down quickly it happens that the &amp;lt;Cmd&amp;gt; R hits the terminal which results in a nicely cleared terminal.</description>
+      <description>Part of my current workflow for web development is writing code in NeoVim in a Terminal on one screen and checking results in the browser on another screen. The screens are virtual and I can change them using the Cmd + ← and Cmd + →.
+Reloading the browser tab I use Cmd + R.
+When switching screens and reloading is down quickly it happens that the Cmd + R hits the terminal which results in a nicely cleared terminal.</description>
     </item>
     
   </channel>
