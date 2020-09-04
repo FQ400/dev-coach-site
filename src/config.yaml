@@ -14,7 +14,7 @@ params:
   dateFormat: "January 2, 2006"
   font: "Open Sans, Helvetica, Arial, sans-serif"
   githubUsername: "#"
-  highlight: true
+  highlight: false
   highlightLanguages: ["javascript"]
   highlightStyle: "gruvbox-dark"
   profilePic: 'profile_pic.jpg'
