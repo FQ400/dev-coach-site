@@ -49,6 +49,7 @@ Later in the process, I decided against submodules and needed to remove it.
 ## Removing a Git Submodule
 
 My reasons against Git submodules are mentioned in [ADR 0004](https://github.com/FQ400/tddcoach-site/blob/master/docs/adr/0004-Git-Submodules.md).
+
 I wanted to remove the submodule without losing my git history.
 
 To remove the reference of the submodule, I removed the entry from `.git/config`, the file `.gitmodules` and the directory `.git/modules/minimal`.

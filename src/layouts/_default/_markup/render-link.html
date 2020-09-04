@@ -1,0 +1,3 @@
+<a href={{ .Destination | safeURL }} {{ if in .Destination .Page.Site.BaseURL }} {{else}} target="_blank"  rel="noopener"{{ end }} title={{ .Title }}>
+  {{ .Text | safeHTML }}
+</a>
