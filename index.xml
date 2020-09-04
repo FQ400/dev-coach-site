@@ -38,7 +38,7 @@ const asyncDbCall1 = () =&amp;gt; { return new Promise((resolve, reject) =&amp;g
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>//dev-coach.me/posts/setting-up-this-website/</guid>
-      <description>This blog is using Hugo with the minimal theme. I followed the README on how to integrate a theme into a Hugo site. It mentioned git submodules, so I added a submodule with the original repo URL.
+      <description>This blog is using Hugo  with the minimal theme. I followed the README  on how to integrate a theme into a Hugo site. It mentioned git submodules, so I added a submodule with the original repo URL.
 I got comfortable with the ecosystem. So I wanted to adapt the theme to my needs, which led me to fork the theme repo.
 After changing some code in the submodule I realized working with a submodule is a bit inconvenient and I decided to remove it.</description>
     </item>
@@ -49,7 +49,7 @@ After changing some code in the submodule I realized working with a submodule is
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
       <guid>//dev-coach.me/about/</guid>
-      <description>About me   10 years of experience in software development (web) polyglot developer using modern development practices in HTML, CSS, Javascript, Ruby, Golang or Python practicing XP, TDD, Refactoring and Software Crafting have/had the roles: Student, Software Engineer, Lead Software Engineer, CTO at kontextR, Freelance Consultant  About this website  built using Hugo static site generator used a forked version of the minimal theme imprint help by language-boutique website source on github  </description>
+      <description>About me   10 years of experience in software development (web) polyglot developer using modern development practices in HTML, CSS, Javascript, Ruby, Golang or Python practicing XP, TDD, Refactoring and Software Crafting have/had the roles: Student, Software Engineer, Lead Software Engineer, CTO at kontextR  , Freelance Consultant  About this website  built using Hugo static site generator   used a forked version  of the minimal theme   imprint help by language-boutique   website source on github    </description>
     </item>
     
     <item>

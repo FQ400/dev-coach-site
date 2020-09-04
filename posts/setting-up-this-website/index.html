@@ -116,8 +116,14 @@
 
     </div>
 
-    <div align="start" class="content"><p>This blog is using <a href="https://gohugo.io/">Hugo</a> with the minimal theme.
-I followed the <a href="https://github.com/calintat/minimal">README</a> on how to integrate a theme into a Hugo site.
+    <div align="start" class="content"><p>This blog is using <a href=https://gohugo.io/  target="_blank"  rel="noopener" title=>
+  Hugo
+</a>
+ with the minimal theme.
+I followed the <a href=https://github.com/calintat/minimal  target="_blank"  rel="noopener" title=>
+  README
+</a>
+ on how to integrate a theme into a Hugo site.
 It mentioned git submodules, so I added a submodule with the original repo URL.</p>
 <p>I got comfortable with the ecosystem. So I wanted to adapt the theme to my needs, which led me to fork the theme repo.</p>
 <p>After changing some code in the submodule I realized working with a submodule is a bit inconvenient and I decided to remove it.
@@ -141,8 +147,11 @@ References to the submodules can be found in two files.</p>
 From the root directory, I did <code>git submodule add https://github.com/FQ400/minimal themes/minimal</code></p>
 <p>Later in the process, I decided against submodules and needed to remove it.</p>
 <h2 id="removing-a-git-submodule">Removing a Git Submodule</h2>
-<p>My reasons against Git submodules are mentioned in <a href="https://github.com/FQ400/tddcoach-site/blob/master/docs/adr/0004-Git-Submodules.md">ADR 0004</a>.
-I wanted to remove the submodule without losing my git history.</p>
+<p>My reasons against Git submodules are mentioned in <a href=https://github.com/FQ400/tddcoach-site/blob/master/docs/adr/0004-Git-Submodules.md  target="_blank"  rel="noopener" title=>
+  ADR 0004
+</a>
+.</p>
+<p>I wanted to remove the submodule without losing my git history.</p>
 <p>To remove the reference of the submodule, I removed the entry from <code>.git/config</code>, the file <code>.gitmodules</code> and the directory <code>.git/modules/minimal</code>.</p>
 <p><strong>Checking with <code>git submodule</code>, the submodule is still there.</strong></p>
 <p>The next idea was to remove the local repo and clone it again.</p>
@@ -180,7 +189,10 @@ The whole repo is now represented in files, which looked like this:</p>
 0009-Update-submodule-theme.patch                         &lt;-- NOT NEEDED
 0010-WIP.patch
 </code></pre><p>After I removed all files, which are <code>NOT NEEDED</code> the last step was to modify
-<a href="https://gist.github.com/FQ400/b53f78c757b01a832773385bfa210311">0003-Setup-Basic-Hugo-Blog.patch</a>
+<a href=https://gist.github.com/FQ400/b53f78c757b01a832773385bfa210311  target="_blank"  rel="noopener" title=>
+  0003-Setup-Basic-Hugo-Blog.patch
+</a>
+
 and remove the submodule references.</p>
 <p>Line 38-46 needed to be removed:</p>
 <pre><code class="language-none" data-lang="none">diff --git a/.gitmodules b/.gitmodules
@@ -202,7 +214,10 @@ index 0000000..c50ae4a
 +Subproject commit c50ae4adf79f2c43262c035704a6124cff8e8b9a
 </code></pre><p>With that modification, I used <code>git am &lt; *.patch</code> in a newly created repo to apply all patch files.</p>
 <p><strong>Checking with <code>git submodule</code>, the submodule is gone. DONE</strong></p>
-<p>I found multiple answers on <a href="https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule/36593218">Stackoverflow</a>.
+<p>I found multiple answers on <a href=https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule/36593218  target="_blank"  rel="noopener" title=>
+  Stackoverflow
+</a>
+.
 That shows that there are multiple ways of solving the issue. Removing git submodules is <strong>not</strong> an easy task.</p>
 </div>
     <p class='dates'>
