@@ -28,7 +28,7 @@
  <link rel="stylesheet" href="//dev-coach.me/custom.css"> 
 
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/gruvbox-dark.min.css"> 
+
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -36,12 +36,6 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
  
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
-    
-    <script>hljs.initHighlightingOnLoad();</script>
 
 
 
@@ -136,11 +130,11 @@ It means I had to exchange the remote URLs.
 The place of the submodule is in <code>src/themes/minimal</code>.
 References to the submodules can be found in two files.</p>
 <p><code>.gitmodules</code>:</p>
-<pre><code>[submodule &quot;src/themes/minimal&quot;]
+<pre><code class="language-none" data-lang="none">[submodule &quot;src/themes/minimal&quot;]
 	path = src/themes/minimal
 	url = git@github.com:FQ400/minimal.git
 </code></pre><p><code>.git/config</code>:</p>
-<pre><code>[submodule &quot;src/themes/minimal&quot;]
+<pre><code class="language-none" data-lang="none">[submodule &quot;src/themes/minimal&quot;]
 	url = git@github.com:FQ400/minimal.git
 	active = true
 </code></pre><p>I had to remove both entries to be able to reinitialize a new submodule with the <strong>same name</strong> in the <strong>same place</strong>.
@@ -155,7 +149,7 @@ I wanted to remove the submodule without losing my git history.</p>
 <p><strong>Checking with <code>git submodule</code>, the submodule is still there.</strong> How?</p>
 <p>As it turned out submodule references are stored in commits. Now all I needed to do was to find the respective commit.</p>
 <p>A <code>git log --oneline --graph --decorate</code> lists all my commits:</p>
-<pre><code>* 11192a7 (HEAD -&gt; master, origin/master, origin/HEAD) WIP
+<pre><code class="language-none" data-lang="none">* 11192a7 (HEAD -&gt; master, origin/master, origin/HEAD) WIP
 * 275d582 Update submodule theme                           &lt;-- COMMIT NOT NEEDED
 * 720e143 Add initial exchange-git-submodules post
 * 40f793a Add initial about page
@@ -175,7 +169,7 @@ I wanted to remove the submodule without losing my git history.</p>
 <p><code>git format-patch -10 HEAD</code> creates a patch file for each commit from <code>HEAD</code> to <code>HEAD~10</code>.
 In my case <code>HEAD~10</code> was the first commit of the repo.
 The whole repo is now represented in files, which looked like this:</p>
-<pre><code>0001-Add-docs-adr-structure-and-first-ADR.patch
+<pre><code class="language-none" data-lang="none">0001-Add-docs-adr-structure-and-first-ADR.patch
 0002-Add-decission-about-hugo-static-site-generator.patch
 0003-Setup-Basic-Hugo-Blog.patch                          &lt;-- PARTIALLY NEEDED
 0004-Add-params-from-theme-to-config.patch
@@ -189,7 +183,7 @@ The whole repo is now represented in files, which looked like this:</p>
 <a href="https://gist.github.com/FQ400/b53f78c757b01a832773385bfa210311">0003-Setup-Basic-Hugo-Blog.patch</a>
 and remove the submodule references.</p>
 <p>Line 38-46 needed to be removed:</p>
-<pre><code>diff --git a/.gitmodules b/.gitmodules
+<pre><code class="language-none" data-lang="none">diff --git a/.gitmodules b/.gitmodules
 new file mode 100644
 index 0000000..901e09c
 --- /dev/null
@@ -199,7 +193,7 @@ index 0000000..901e09c
 +	path = src/themes/minimal
 +	url = git@github.com:calintat/minimal.git
 </code></pre><p>Line 181-186 needed to be removed:</p>
-<pre><code>diff --git a/src/themes/minimal b/src/themes/minimal
+<pre><code class="language-none" data-lang="none">diff --git a/src/themes/minimal b/src/themes/minimal
 new file mode 160000
 index 0000000..c50ae4a
 --- /dev/null
