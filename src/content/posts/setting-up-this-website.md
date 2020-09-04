@@ -27,14 +27,14 @@ The place of the submodule is in `src/themes/minimal`.
 References to the submodules can be found in two files.
 
 `.gitmodules`:
-```
+```none
 [submodule "src/themes/minimal"]
 	path = src/themes/minimal
 	url = git@github.com:FQ400/minimal.git
 ```
 
 `.git/config`:
-```
+```none
 [submodule "src/themes/minimal"]
 	url = git@github.com:FQ400/minimal.git
 	active = true
@@ -64,7 +64,7 @@ As it turned out submodule references are stored in commits. Now all I needed to
 
 A `git log --oneline --graph --decorate` lists all my commits:
 
-```
+```none
 * 11192a7 (HEAD -> master, origin/master, origin/HEAD) WIP
 * 275d582 Update submodule theme                           <-- COMMIT NOT NEEDED
 * 720e143 Add initial exchange-git-submodules post
@@ -89,7 +89,7 @@ The second option worked.
 `git format-patch -10 HEAD` creates a patch file for each commit from `HEAD` to `HEAD~10`.
 In my case `HEAD~10` was the first commit of the repo.
 The whole repo is now represented in files, which looked like this:
-```
+```none
 0001-Add-docs-adr-structure-and-first-ADR.patch
 0002-Add-decission-about-hugo-static-site-generator.patch
 0003-Setup-Basic-Hugo-Blog.patch                          <-- PARTIALLY NEEDED
@@ -107,7 +107,7 @@ After I removed all files, which are `NOT NEEDED` the last step was to modify
 and remove the submodule references.
 
 Line 38-46 needed to be removed:
-```
+```none
 diff --git a/.gitmodules b/.gitmodules
 new file mode 100644
 index 0000000..901e09c
@@ -120,7 +120,7 @@ index 0000000..901e09c
 ```
 
 Line 181-186 needed to be removed:
-```
+```none
 diff --git a/src/themes/minimal b/src/themes/minimal
 new file mode 160000
 index 0000000..c50ae4a
