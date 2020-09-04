@@ -8,9 +8,8 @@
           {{ end }}
           <p class="copyright text-muted text-center">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Minimal](https://github.com/calintat/minimal)." | markdownify }}</p>
         </footer>
-
+        {{ partial "js" . }}
         {{ partial "body-close" . }}
-
     </body>
 
 </html>

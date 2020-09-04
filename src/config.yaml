@@ -21,7 +21,7 @@ params:
   showBorder: true
   mathJax: false
   css: ["custom.css"]
-  js: []
+  js: ["custom.js"]
 
 menu:
   main:
