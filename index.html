@@ -117,6 +117,30 @@
 
 
         
+<script type="text/javascript">
+  const root='/ext/'
+  window.PZAT = {
+    design: 'full',
+    mainColor: '#000000',
+    accentColor: '#FF0000',
+    opacity: '0.8',
+    position: 'top-left',
+    assetPath: root,
+    blocklist: JSON.parse("[]"),
+    strictBlockList: JSON.parse("[]"),
+    contentDeselector: JSON.parse("[]"),
+    logoUrl: root+ 'icon-128.png',
+    logoTitle: '',
+    logoLinkTarget: ''
+  };
+  (function(){
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = root+'content.js';
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(s);
+  })();
+</script>
 
     </body>
 
