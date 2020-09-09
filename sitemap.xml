@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//dev-coach.me/posts/converting-sass-to-scss-using-vim-recordings/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/learning/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/posts/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/sass/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/scss/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/vim/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/vim-recording/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//dev-coach.me/tags/commands/</loc>
     <lastmod>2020-09-03T00:00:00+00:00</lastmod>
   </url>
@@ -14,16 +54,6 @@
   
   <url>
     <loc>//dev-coach.me/snippets/</loc>
-    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//dev-coach.me/tags/</loc>
-    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//dev-coach.me/tags/vim/</loc>
     <lastmod>2020-09-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -59,16 +89,6 @@
   
   <url>
     <loc>//dev-coach.me/tags/git/</loc>
-    <lastmod>2020-06-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//dev-coach.me/tags/learning/</loc>
-    <lastmod>2020-06-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//dev-coach.me/posts/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   

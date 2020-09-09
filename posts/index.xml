@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Dev-Coach</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//dev-coach.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Converting Sass to SCSS by Using Vim Recordings</title>
+      <link>//dev-coach.me/posts/converting-sass-to-scss-using-vim-recordings/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/posts/converting-sass-to-scss-using-vim-recordings/</guid>
+      <description>The task is to convert Sass files to SCSS files. There are Sass to CSS compilers, which aren&amp;rsquo;t applicable because of Sass mixin can&amp;rsquo;t be converted into valid CSS.
+Converting Sass to SCSS manually is a repetitive task of setting curly braces and semicolons.
+Since NeoVim  is my current editor why not use a feature called recording to automate as much as possible.
+Vim recording key-strokes into a register In general, a recording works as the following:</description>
+    </item>
     
     <item>
       <title>Setting up a Hugo page made me work with git submodules</title>

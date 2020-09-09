@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Dev-Coach</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//dev-coach.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>learning</title>
+      <link>//dev-coach.me/tags/learning/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sass</title>
+      <link>//dev-coach.me/tags/sass/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/sass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCSS</title>
+      <link>//dev-coach.me/tags/scss/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/scss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>//dev-coach.me/tags/vim/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim recording</title>
+      <link>//dev-coach.me/tags/vim-recording/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/vim-recording/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>commands</title>
@@ -17,15 +62,6 @@
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>//dev-coach.me/tags/commands/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vim</title>
-      <link>//dev-coach.me/tags/vim/</link>
-      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>//dev-coach.me/tags/vim/</guid>
       <description></description>
     </item>
     
@@ -80,15 +116,6 @@
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>//dev-coach.me/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>learning</title>
-      <link>//dev-coach.me/tags/learning/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>//dev-coach.me/tags/learning/</guid>
       <description></description>
     </item>
     
