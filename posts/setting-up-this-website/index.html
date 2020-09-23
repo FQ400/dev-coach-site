@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Removing git submodules from an existing project."/>
+        <title>Setting up a Hugo page made me work with git submodules</title>
+        
+        <style>
+
+    html body {
+        font-family: Open Sans, Helvetica, Arial, sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: blue;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="//dev-coach.me/css/main.css">
+
+
+ <link rel="stylesheet" href="//dev-coach.me/custom.css"> 
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <meta name="generator" content="Hugo 0.68.3" />
+        
+
+        
+
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Setting up a Hugo page made me work with git submodules</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/snippets/">Snippets</a></li>
+                            
+                                <li><a href="/about">About</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/FQ400/dev-coach-site"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/FQ400"><i class="fa fa-twitter"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Setting up a Hugo page made me work with git submodules</h2>
+        
+<a href="//dev-coach.me/tags/learning"><kbd class="item-tag">learning</kbd></a>
+
+<a href="//dev-coach.me/tags/git"><kbd class="item-tag">git</kbd></a>
+
+<a href="//dev-coach.me/tags/submodule"><kbd class="item-tag">submodule</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><p>This blog is using <a href=https://gohugo.io/  target="_blank"  rel="noopener" title=>
+  Hugo
+</a>
+ with the minimal theme.
+I followed the <a href=https://github.com/calintat/minimal  target="_blank"  rel="noopener" title=>
+  README
+</a>
+ on how to integrate a theme into a Hugo site.
+It mentioned git submodules, so I added a submodule with the original repo URL.</p>
+<p>I got comfortable with the ecosystem. So I wanted to adapt the theme to my needs, which led me to fork the theme repo.</p>
+<p>After changing some code in the submodule I realized working with a submodule is a bit inconvenient and I decided to remove it.
+For instance, every time I change something in the submodule,
+I have to commit the change in the submodule and I have to create a new commit with the reference of the submodule&rsquo;s commit in the main repo.</p>
+<p>I used git in version <code>2.26.2</code> for this post.</p>
+<h2 id="exchanging-a-git-submodule">Exchanging a Git Submodule</h2>
+<p>The problem was, replacing the original submodule with my forked version with the same name.
+It means I had to exchange the remote URLs.
+The place of the submodule is in <code>src/themes/minimal</code>.
+References to the submodules can be found in two files.</p>
+<p><code>.gitmodules</code>:</p>
+<pre><code class="language-none" data-lang="none">[submodule &quot;src/themes/minimal&quot;]
+	path = src/themes/minimal
+	url = git@github.com:FQ400/minimal.git
+</code></pre><p><code>.git/config</code>:</p>
+<pre><code class="language-none" data-lang="none">[submodule &quot;src/themes/minimal&quot;]
+	url = git@github.com:FQ400/minimal.git
+	active = true
+</code></pre><p>I had to remove both entries to be able to reinitialize a new submodule with the <strong>same name</strong> in the <strong>same place</strong>.
+From the root directory, I did <code>git submodule add https://github.com/FQ400/minimal themes/minimal</code></p>
+<p>Later in the process, I decided against submodules and needed to remove it.</p>
+<h2 id="removing-a-git-submodule">Removing a Git Submodule</h2>
+<p>My reasons against Git submodules are mentioned in <a href=https://github.com/FQ400/tddcoach-site/blob/master/docs/adr/0004-Git-Submodules.md  target="_blank"  rel="noopener" title=>
+  ADR 0004
+</a>
+.</p>
+<p>I wanted to remove the submodule without losing my git history.</p>
+<p>To remove the reference of the submodule, I removed the entry from <code>.git/config</code>, the file <code>.gitmodules</code> and the directory <code>.git/modules/minimal</code>.</p>
+<p><strong>Checking with <code>git submodule</code>, the submodule is still there.</strong></p>
+<p>The next idea was to remove the local repo and clone it again.</p>
+<p><strong>Checking with <code>git submodule</code>, the submodule is still there.</strong> How?</p>
+<p>As it turned out submodule references are stored in commits. Now all I needed to do was to find the respective commit.</p>
+<p>A <code>git log --oneline --graph --decorate</code> lists all my commits:</p>
+<pre><code class="language-none" data-lang="none">* 11192a7 (HEAD -&gt; master, origin/master, origin/HEAD) WIP
+* 275d582 Update submodule theme                           &lt;-- COMMIT NOT NEEDED
+* 720e143 Add initial exchange-git-submodules post
+* 40f793a Add initial about page
+* 5704ca7 Add forked minimal theme from me as submodule    &lt;-- COMMIT NOT NEEDED
+* bfcbb27 Remove theme submodule                           &lt;-- COMMIT NOT NEEDED
+* 8796c54 Add params from theme to config
+* 2fbc121 Setup Basic Hugo Blog                            &lt;-- COMMIT PARTIALLY NEEDED
+* e6fd64a Add decission about hugo static site generator
+* 566dd4c Add docs/adr structure and first ADR
+</code></pre><p>I saw 2 options:</p>
+<ol>
+<li>going back in history using interactive rebase and drop commits</li>
+<li>rerun the repo history using patch files</li>
+</ol>
+<p>With option 1 I failed with the adjustment of <code>2fbc121 Setup Basic Hugo Blog</code>.</p>
+<p>The second option worked.</p>
+<p><code>git format-patch -10 HEAD</code> creates a patch file for each commit from <code>HEAD</code> to <code>HEAD~10</code>.
+In my case <code>HEAD~10</code> was the first commit of the repo.
+The whole repo is now represented in files, which looked like this:</p>
+<pre><code class="language-none" data-lang="none">0001-Add-docs-adr-structure-and-first-ADR.patch
+0002-Add-decission-about-hugo-static-site-generator.patch
+0003-Setup-Basic-Hugo-Blog.patch                          &lt;-- PARTIALLY NEEDED
+0004-Add-params-from-theme-to-config.patch
+0005-Remove-theme-submodule.patch                         &lt;-- NOT NEEDED
+0006-Add-forked-minimal-theme-from-me-as-submodule.patch  &lt;-- NOT NEEDED
+0007-Add-initial-about-page.patch
+0008-Add-initial-exchange-git-submodules-post.patch
+0009-Update-submodule-theme.patch                         &lt;-- NOT NEEDED
+0010-WIP.patch
+</code></pre><p>After I removed all files, which are <code>NOT NEEDED</code> the last step was to modify
+<a href=https://gist.github.com/FQ400/b53f78c757b01a832773385bfa210311  target="_blank"  rel="noopener" title=>
+  0003-Setup-Basic-Hugo-Blog.patch
+</a>
+
+and remove the submodule references.</p>
+<p>Line 38-46 needed to be removed:</p>
+<pre><code class="language-none" data-lang="none">diff --git a/.gitmodules b/.gitmodules
+new file mode 100644
+index 0000000..901e09c
+--- /dev/null
++++ b/.gitmodules
+@@ -0,0 +1,3 @@
++[submodule &quot;src/themes/minimal&quot;]
++	path = src/themes/minimal
++	url = git@github.com:calintat/minimal.git
+</code></pre><p>Line 181-186 needed to be removed:</p>
+<pre><code class="language-none" data-lang="none">diff --git a/src/themes/minimal b/src/themes/minimal
+new file mode 160000
+index 0000000..c50ae4a
+--- /dev/null
++++ b/src/themes/minimal
+@@ -0,0 +1 @@
++Subproject commit c50ae4adf79f2c43262c035704a6124cff8e8b9a
+</code></pre><p>With that modification, I used <code>git am &lt; *.patch</code> in a newly created repo to apply all patch files.</p>
+<p><strong>Checking with <code>git submodule</code>, the submodule is gone. DONE</strong></p>
+<p>I found multiple answers on <a href=https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule/36593218  target="_blank"  rel="noopener" title=>
+  Stackoverflow
+</a>
+.
+That shows that there are multiple ways of solving the issue. Removing git submodules is <strong>not</strong> an easy task.</p>
+</div>
+    <p class='dates'>
+  <i>
+    Created at
+    <time dateime="2020-06-01 00:00:00 &#43;0000 UTC">
+      June 1, 2020
+    </time>
+    
+      <br />
+      Updated at
+      <time dateime="2020-06-10 00:00:00 &#43;0000 UTC">
+        June 10, 2020
+      </time>
+    
+  </i>
+</p>
+
+
+</main>
+
+        <footer>
+          
+            <ul>
+              
+                <li><a href="/imprint">Imprint</a></li>
+              
+            </ul>
+          
+          <p class="copyright text-muted text-center">Copyright 2020 - Carsten Lamm</p>
+        </footer>
+        
+
+
+
+ <script src="//dev-coach.me/custom.js"></script> 
+
+
+        
+<script async defer data-domain="dev-coach.me" src="https://plausible.io/js/plausible.js"></script>
+
+    </body>
+
+</html>
+

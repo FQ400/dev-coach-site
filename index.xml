@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev-Coach</title>
+    <link>//dev-coach.me/</link>
+    <description>Recent content on Dev-Coach</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//dev-coach.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning about the w command</title>
+      <link>//dev-coach.me/snippets/learning-about-the-w-command/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/snippets/learning-about-the-w-command/</guid>
+      <description>The following tweet inspired me to dig deeper and write down my findings. 😌
+It will also give you the uptime and load average numbers for the last 1, 5, and 15 minutes. That&amp;#39;s what I&amp;#39;m using it for most of the time.
+&amp;mdash; Mathias Lafeldt (@mlafeldt) September 22, 2020  I thought of using w as an alias. I can&amp;rsquo;t because it is a command.
+The command shows what users are currently logged in and what they are doing.</description>
+    </item>
+    
+    <item>
+      <title>Converting Sass to SCSS by Using Vim Recordings</title>
+      <link>//dev-coach.me/posts/converting-sass-to-scss-using-vim-recordings/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/posts/converting-sass-to-scss-using-vim-recordings/</guid>
+      <description>The task is to convert Sass files to SCSS files. There are Sass to CSS compilers, which aren&amp;rsquo;t applicable because of Sass mixin can&amp;rsquo;t be converted into valid CSS.
+Converting Sass to SCSS manually is a repetitive task of setting curly braces and semicolons.
+Since NeoVim  is my current editor why not use a feature called recording to automate as much as possible.
+Vim recording key-strokes into a register In general, a recording works as the following:</description>
+    </item>
+    
+    <item>
+      <title>Redrawing Vim Screen</title>
+      <link>//dev-coach.me/snippets/redrawing-vim-screen/</link>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/snippets/redrawing-vim-screen/</guid>
+      <description>Part of my current workflow for web development is writing code in NeoVim in an iTerm2 Terminal on one screen and checking results in the browser on another screen. The screens are virtual and can be changed using Cmd + ← and Cmd + → . I reload a browser tab using Cmd + R .
+When switching screens and reloading is down quickly it happens that the Cmd + R hits the terminal which results in a nicely cleared terminal.</description>
+    </item>
+    
+    <item>
+      <title>Async/Await and Array.forEach</title>
+      <link>//dev-coach.me/snippets/looping-async-await-in-javascript/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/snippets/looping-async-await-in-javascript/</guid>
+      <description>Assuming we have two async calls to a database that return a promise. asyncDbCall1 takes longer then asyncDbCall2.
+const asyncDbCall1 = () =&amp;gt; { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { resolve(1) }, 200); }) }; const asyncDbCall2 = () =&amp;gt; { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { resolve(2) }, 100); }) }; Calling them in sequence using Array.forEach:
+[asyncDbCall1, asyncDbCall2].forEach(async (promise) =&amp;gt; { const data = await promise(); console.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a Hugo page made me work with git submodules</title>
+      <link>//dev-coach.me/posts/setting-up-this-website/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/posts/setting-up-this-website/</guid>
+      <description>This blog is using Hugo  with the minimal theme. I followed the README  on how to integrate a theme into a Hugo site. It mentioned git submodules, so I added a submodule with the original repo URL.
+I got comfortable with the ecosystem. So I wanted to adapt the theme to my needs, which led me to fork the theme repo.
+After changing some code in the submodule I realized working with a submodule is a bit inconvenient and I decided to remove it.</description>
+    </item>
+    
+    <item>
+      <title>About Dev-Coach</title>
+      <link>//dev-coach.me/about/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/about/</guid>
+      <description>About me   10 years of experience in software development (web) polyglot developer using modern development practices in HTML, CSS, Javascript, Ruby, Golang or Python practicing XP, TDD, Refactoring and Software Crafting have/had the roles: Student, Software Engineer, Lead Software Engineer, CTO at kontextR  , Freelance Consultant  About this website  built using Hugo static site generator   used a forked version  of the minimal theme   imprint help by language-boutique   website source on github    </description>
+    </item>
+    
+    <item>
+      <title>Imprint</title>
+      <link>//dev-coach.me/imprint/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/imprint/</guid>
+      <description>Contact Carsten Lamm
+Gaiglstr. 23
+80335 Munich
+Germany
+E-Mail: CarstenLamm@protonmail.com
+Phone: +49 151 7272 6952
+VAT-ID: DE294492063
+Legal disclaimer The contents of these pages were prepared with utmost care. Nonetheless, we cannot assume liability for the timeless accuracy and completeness of the information.
+Our website contains links to external websites. As the contents of these third-party websites are beyond our control, we cannot accept liability for them. Responsibility for the contents of the linked pages is always held by the provider or operator of the pages.</description>
+    </item>
+    
+  </channel>
+</rss>

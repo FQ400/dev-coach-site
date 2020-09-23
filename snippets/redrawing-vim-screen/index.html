@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Redrawing Vim Screen using a command or a shortcut."/>
+        <title>Redrawing Vim Screen</title>
+        
+        <style>
+
+    html body {
+        font-family: Open Sans, Helvetica, Arial, sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: blue;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="//dev-coach.me/css/main.css">
+
+
+ <link rel="stylesheet" href="//dev-coach.me/custom.css"> 
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <meta name="generator" content="Hugo 0.68.3" />
+        
+
+        
+
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Redrawing Vim Screen</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/snippets/">Snippets</a></li>
+                            
+                                <li><a href="/about">About</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/FQ400/dev-coach-site"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/FQ400"><i class="fa fa-twitter"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Redrawing Vim Screen</h2>
+        
+<a href="//dev-coach.me/tags/vim"><kbd class="item-tag">vim</kbd></a>
+
+<a href="//dev-coach.me/tags/commands"><kbd class="item-tag">commands</kbd></a>
+
+<a href="//dev-coach.me/tags/workflow"><kbd class="item-tag">workflow</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><p>Part of my current workflow for web development is writing code in NeoVim in an iTerm2 Terminal on one screen and checking results in the browser on another screen.
+The screens are virtual and can be changed using <kbd>Cmd</kbd>
+ + <kbd>←</kbd>
+ and <kbd>Cmd</kbd>
+ + <kbd>→</kbd>
+.
+I reload a browser tab using <kbd>Cmd</kbd>
+ + <kbd>R</kbd>
+.</p>
+<p>When switching screens and reloading is down quickly it happens that the <kbd>Cmd</kbd>
+ + <kbd>R</kbd>
+ hits the terminal which results in a nicely cleared terminal.
+All windows in NeoVim are cleared as well. This is especially annoying when I have multiple windows.</p>
+<p>A time-saving command is <code>:mod</code>, which redraws all vim windows. Even faster is the shortcut is <kbd>Ctrl</kbd>
+ + <kbd>L</kbd>
+.</p>
+<p>The following animation shows the command in action.</p>
+<p><img src="./assets/clearing-the-terminal.gif" alt="Show command in action"></p>
+<p>See <code>:help mod</code> for further documentation.</p>
+</div>
+    <p class='dates'>
+  <i>
+    Created at
+    <time dateime="2020-09-02 00:00:00 &#43;0000 UTC">
+      September 2, 2020
+    </time>
+    
+      <br />
+      Updated at
+      <time dateime="2020-09-03 00:00:00 &#43;0000 UTC">
+        September 3, 2020
+      </time>
+    
+  </i>
+</p>
+
+
+</main>
+
+        <footer>
+          
+            <ul>
+              
+                <li><a href="/imprint">Imprint</a></li>
+              
+            </ul>
+          
+          <p class="copyright text-muted text-center">Copyright 2020 - Carsten Lamm</p>
+        </footer>
+        
+
+
+
+ <script src="//dev-coach.me/custom.js"></script> 
+
+
+        
+<script async defer data-domain="dev-coach.me" src="https://plausible.io/js/plausible.js"></script>
+
+    </body>
+
+</html>
+
