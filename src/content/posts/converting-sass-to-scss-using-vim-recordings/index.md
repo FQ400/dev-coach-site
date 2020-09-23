@@ -1,5 +1,6 @@
 ---
 title: "Converting Sass to SCSS by Using Vim Recordings"
+description: "Converting Sass to SCSS using vim recordings. Showing detailed key-stroke examples and videos"
 date: 2020-09-09
 lastmod: 2020-09-09
 draft: false

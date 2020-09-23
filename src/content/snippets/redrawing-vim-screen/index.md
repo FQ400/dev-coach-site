@@ -1,5 +1,6 @@
 ---
 title: "Redrawing Vim Screen"
+description: "Redrawing Vim Screen using a command or a shortcut."
 date: 2020-09-02
 lastmod: 2020-09-03
 draft: false

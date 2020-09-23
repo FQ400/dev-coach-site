@@ -1,5 +1,6 @@
 ---
 title: "Setting up a Hugo page made me work with git submodules"
+description: "Removing git submodules from an existing project."
 date: 2020-06-01
 lastmod: 2020-06-10
 draft: false

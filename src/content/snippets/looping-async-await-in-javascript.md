@@ -1,5 +1,6 @@
 ---
 title: "Async/Await and Array.forEach"
+description: "Showing why async/await isn't working with Array.forEach"
 date: 2020-07-01
 lastmod: 2020-07-01
 draft: false
