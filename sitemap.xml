@@ -3,12 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>//dev-coach.me/posts/converting-sass-to-scss-using-vim-recordings/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>//dev-coach.me/tags/learning/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//dev-coach.me/tags/learning/</loc>
+    <loc>//dev-coach.me/snippets/learning-about-the-w-command/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/linux/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/mac/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/snippets/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/snippets/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/tools/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/posts/converting-sass-to-scss-using-vim-recordings/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -24,11 +59,6 @@
   
   <url>
     <loc>//dev-coach.me/tags/scss/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//dev-coach.me/tags/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -49,11 +79,6 @@
   
   <url>
     <loc>//dev-coach.me/snippets/redrawing-vim-screen/</loc>
-    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//dev-coach.me/snippets/</loc>
     <lastmod>2020-09-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -79,11 +104,6 @@
   
   <url>
     <loc>//dev-coach.me/tags/javascript/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//dev-coach.me/tags/snippets/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url>
   

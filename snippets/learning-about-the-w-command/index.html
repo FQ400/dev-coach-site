@@ -5,7 +5,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>snippets</title>
+        <title>Learning about the w command</title>
         
         <style>
 
@@ -37,9 +37,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
  <meta name="generator" content="Hugo 0.68.3" />
         
-            <link href="/tags/snippets/index.xml" rel="alternate" type="application/rss&#43;xml" title="Dev-Coach" />
-            <link href="/tags/snippets/index.xml" rel="feed" type="application/rss&#43;xml" title="Dev-Coach" />
-        
 
         
 
@@ -55,7 +52,7 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand visible-xs" href="#">snippets</a>
+                    <a class="navbar-brand visible-xs" href="#">Learning about the w command</a>
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -92,20 +89,10 @@
 
 <main>
 
-    <h2>snippets</h2>
-
-     <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/snippets/learning-about-the-w-command/">Learning about the w command</a></h4>
-    <h5>September 23, 2020</h5>
-    
+    <div>
+        <h2>Learning about the w command</h2>
+        <h5></h5>
+        
 <a href="//dev-coach.me/tags/snippets"><kbd class="item-tag">snippets</kbd></a>
 
 <a href="//dev-coach.me/tags/learning"><kbd class="item-tag">learning</kbd></a>
@@ -117,36 +104,65 @@
 <a href="//dev-coach.me/tags/tools"><kbd class="item-tag">tools</kbd></a>
 
 
+    </div>
 
+    <div align="start" class="content"><p>The following tweet inspired me to dig deeper and write down my findings. 😌</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It will also give you the uptime and load average numbers for the last 1, 5, and 15 minutes. That&#39;s what I&#39;m using it for most of the time.</p>&mdash; Mathias Lafeldt (@mlafeldt) <a href="https://twitter.com/mlafeldt/status/1308329248680218625?ref_src=twsrc%5Etfw">September 22, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I thought of using <code>w</code> as an alias. I can&rsquo;t because it is a command.</p>
+<p>The command shows what users are currently logged in and what they are doing.
+It also provides a summary of the current system activities.</p>
+<p>See this example output (from a Mac):</p>
+<pre><code class="language-none" data-lang="none">$ w
+14:07  up 4 days, 19:28, 3 users, load averages: 1.69 1.75 1.66
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+clamm    console  -                Fri18   4days -
+clamm    s001     -                Tue18       - w
+clamm    s002     -                Tue18       - nvim snippets/w-command-linux
+</code></pre><p>The first line is the same as using the command <code>uptime</code> and contains the following:</p>
+<ul>
+<li><strong>time</strong></li>
+<li><strong>system running since time</strong></li>
+<li><strong>number of logged-in users</strong></li>
+<li><strong>system load averages</strong> (the last 1, 5, 15 minutes)</li>
+</ul>
+<p>The next lines contain information about:</p>
+<ul>
+<li>user <strong>login names</strong></li>
+<li><strong>terminal names</strong></li>
+<li>source <strong>hosts</strong></li>
+<li><strong>login time</strong></li>
+<li><strong>idle time</strong></li>
+<li>current <strong>process with arguments</strong></li>
+</ul>
+<p><code>w</code> is available on Mac and Linux. The CLI options are different thought.</p>
+<p>There are three options to the command when using it on a Mac:</p>
+<ul>
+<li><code>w -h</code>, which hides the first line.</li>
+<li><code>w -i</code>, which sort the output by ascending idle time</li>
+<li><code>w user</code>, which filters the output by <code>user</code></li>
+</ul>
+<p>Linux has more options. Check them using <code>man w</code>.</p>
 </div>
-  <div class="item">
-
+    <p class='dates'>
+  <i>
+    Created at
+    <time dateime="2020-09-23 00:00:00 &#43;0000 UTC">
+      September 23, 2020
+    </time>
     
+      <br />
+      Updated at
+      <time dateime="2020-09-23 00:00:00 &#43;0000 UTC">
+        September 23, 2020
+      </time>
     
-    
+  </i>
+</p>
 
-    
-    
-
-    <h4><a href="/snippets/looping-async-await-in-javascript/">Async/Await and Array.forEach</a></h4>
-    <h5>July 1, 2020</h5>
-    
-<a href="//dev-coach.me/tags/snippets"><kbd class="item-tag">snippets</kbd></a>
-
-<a href="//dev-coach.me/tags/javascript"><kbd class="item-tag">javascript</kbd></a>
-
-<a href="//dev-coach.me/tags/async"><kbd class="item-tag">async</kbd></a>
-
-<a href="//dev-coach.me/tags/await"><kbd class="item-tag">await</kbd></a>
-
-
-
-</div>
- 
 
 </main>
-
-
 
         <footer>
           

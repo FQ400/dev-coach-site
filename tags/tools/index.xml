@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on Dev-Coach</title>
+    <link>//dev-coach.me/tags/tools/</link>
+    <description>Recent content in tools on Dev-Coach</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//dev-coach.me/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning about the w command</title>
+      <link>//dev-coach.me/snippets/learning-about-the-w-command/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/snippets/learning-about-the-w-command/</guid>
+      <description>The following tweet inspired me to dig deeper and write down my findings. 😌
+It will also give you the uptime and load average numbers for the last 1, 5, and 15 minutes. That&amp;#39;s what I&amp;#39;m using it for most of the time.
+&amp;mdash; Mathias Lafeldt (@mlafeldt) September 22, 2020  I thought of using w as an alias. I can&amp;rsquo;t because it is a command.
+The command shows what users are currently logged in and what they are doing.</description>
+    </item>
+    
+  </channel>
+</rss>

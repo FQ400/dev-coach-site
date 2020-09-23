@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Learning about the w command</title>
+      <link>//dev-coach.me/snippets/learning-about-the-w-command/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/snippets/learning-about-the-w-command/</guid>
+      <description>The following tweet inspired me to dig deeper and write down my findings. 😌
+It will also give you the uptime and load average numbers for the last 1, 5, and 15 minutes. That&amp;#39;s what I&amp;#39;m using it for most of the time.
+&amp;mdash; Mathias Lafeldt (@mlafeldt) September 22, 2020  I thought of using w as an alias. I can&amp;rsquo;t because it is a command.
+The command shows what users are currently logged in and what they are doing.</description>
+    </item>
+    
+    <item>
       <title>Converting Sass to SCSS by Using Vim Recordings</title>
       <link>//dev-coach.me/posts/converting-sass-to-scss-using-vim-recordings/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
