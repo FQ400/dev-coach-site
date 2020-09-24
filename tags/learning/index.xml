@@ -6,10 +6,21 @@
     <description>Recent content in learning on Dev-Coach</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//dev-coach.me/tags/learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adding &lt;meta&gt; elements to get a Twitter preview</title>
+      <link>//dev-coach.me/posts/adding-meta-tags-to-get-twitter-preview/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/posts/adding-meta-tags-to-get-twitter-preview/</guid>
+      <description>As you might know this blog is made using Hugo  with the minimal theme  . When a post is shared on Twitter, I like to have a nice post preview.
+TODO! Figure out what data needs to present on a webpage to get a tweet preview. https://t.co/bMJA5uCZ4z
+&amp;mdash; FQ400 (@FQ400) September 23, 2020  This post is about figuring out what I need to add to the page.</description>
+    </item>
     
     <item>
       <title>Learning about the w command</title>
