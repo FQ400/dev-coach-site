@@ -14,11 +14,6 @@
             <link href="{{ .RelPermalink }}" rel="alternate" type="{{ .MediaType.Type }}" title="{{ $.Site.Title }}" />
             <link href="{{ .RelPermalink }}" rel="feed" type="{{ .MediaType.Type }}" title="{{ $.Site.Title }}" />
         {{ end }}
-
-        {{ if .Site.Params.MathJax | default true }}
-            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        {{ end }}
-
         {{ partial "head-close" . }}
     </head>
 

@@ -18,7 +18,6 @@ params:
   highlightStyle: "gruvbox-dark"
   profilePic: 'profile_pic.jpg'
   showBorder: true
-  mathJax: false
   css: ["custom.css"]
   js: ["custom.js"]
 
