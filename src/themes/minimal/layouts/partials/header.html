@@ -15,7 +15,12 @@
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ .Permalink }}" />
-        <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.profilePic }}" />
+
+        {{ $urlString := .Site.Params.profilePic | absURL }}
+        {{ $url := urls.Parse $urlString }}
+        {{ $protocol := cond (eq ($url.Scheme) "") "https:" "" }}
+
+        <meta property="og:image" content="{{ $protocol }}{{ $urlString }}" />
         <meta name="twitter:card" content="summary" />
 
         {{ if .Site.Params.favicon }}
