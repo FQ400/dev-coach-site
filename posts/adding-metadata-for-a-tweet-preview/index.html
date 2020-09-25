@@ -20,10 +20,8 @@
         
         
         
-        dev-coach.me
 
-
-        <meta property="og:image" content="//dev-coach.me/profile_pic.jpg" />
+        <meta property="og:image" content="https://dev-coach.me/profile_pic.jpg" />
         <meta name="twitter:card" content="summary" />
 
         
@@ -159,8 +157,8 @@ These semantics can be used by services or bots to easily extract specific data.
 . Debugging one URL multiple times a URL shortener like <a href=https://bitly.com/  target="_blank"  rel="noopener" title=>
   bit.ly
 </a>
- can be used in compination with different URL parameters.</p>
-<p>💥 <strong>Important:</strong> The image URL has to have a protocol, like <code>http://site.com/post/image.jpg</code>. Protocal-agnostic URLs like <code>//site.com/post/image.jpg</code> do not work.</p>
+ can be used in combination with different URL parameters.</p>
+<p>💥 <strong>Important:</strong> The image URL has to have a protocol, like <code>http://site.com/post/image.jpg</code>. Protocol-agnostic URLs like <code>//site.com/post/image.jpg</code> do not work.</p>
 <h3 id="going-one-step-further">Going one step further</h3>
 <p>Twitter&rsquo;s preview service understands <a href=https://ogp.me/  target="_blank"  rel="noopener" title=>
   The Open Graph protocol
@@ -186,14 +184,23 @@ I tested it with Twitter, Facebook, Linkedin, and Xing.</p>
 
 &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:type&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;website&#34;</span> /&gt;
 &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:url&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span> /&gt;
-&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:image&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.BaseURL }}{{ .Site.Params.profilePic }}&#34;</span> /&gt;
+
+{{ $urlString := .Site.Params.profilePic | absURL }}
+{{ $url := urls.Parse $urlString }}
+{{ $protocol := cond (eq ($url.Scheme) &#34;&#34;) &#34;https:&#34; &#34;&#34; }}
+
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:image&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $protocol }}{{ $urlString }}&#34;</span> /&gt;
 &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;twitter:card&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;summary&#34;</span> /&gt;
-</code></pre></div><p>The curly braces are Hugo&rsquo;s string interpolation technique.
+</code></pre></div><p>The curly braces are used to do string interpolation in Hugo.
 It replaces the content attribute of <code>&lt;meta&gt;</code> with page or site-specific data.</p>
+<p>The implementation of figuring out the protocol isn&rsquo;t ideal. It should be hidden in a helper function which is used in the template, but I don&rsquo;t know how. 😉</p>
 <p>This was the first time I worked on an issue and wrote down what I was doing.
 It was fun.
-By the way, here is the <a href=https://github.com/FQ400/dev-coach-site/commit/4d09090fc4bc4a767a78eecec8c9b68ebdf08e47  target="_blank"  rel="noopener" title=>
-  commit
+By the way, here are the commits: <a href=https://github.com/FQ400/dev-coach-site/commit/4d09090fc4bc4a767a78eecec8c9b68ebdf08e47  target="_blank"  rel="noopener" title=>
+  commit 1
+</a>
+, <a href=https://github.com/FQ400/dev-coach-site/commit/7d314d358b4d8f5a37ffc7e588a56658ccf251bb  target="_blank"  rel="noopener" title=>
+  commit 2
 </a>
 </p>
 </div>
