@@ -2,7 +2,7 @@
 title: "Adding <meta> elements to get a Twitter preview"
 description: "What <meta> elements are needed to get a Twitter preview? How to add them using the Hugo static site generator."
 date: 2020-09-24
-lastmod: 2020-09-24
+lastmod: 2020-09-25
 draft: false
 tags: ["learning", "hugo", "html", "twitter"]
 ---
@@ -39,7 +39,12 @@ Twitter's preview service understands among others the following meta elements:
 ```
 
 The data contains a **card type**, a **title**, a **description**, and a location of an **image**.
+
 Adding these `<meta>` elements to the page solves the preview issue. 👍🏽
+
+To validate that it works Twitter provides a [Card Validator](https://cards-dev.twitter.com/validator). Debugging one URL multiple times a URL shortener like [bit.ly](https://bitly.com/) can be used in combination with different URL parameters.
+
+💥 **Important:** The image URL has to have a protocol, like `http://site.com/post/image.jpg`. Protocol-agnostic URLs like `//site.com/post/image.jpg` do not work.
 
 
 ### Going one step further
@@ -75,14 +80,20 @@ I tested it with Twitter, Facebook, Linkedin, and Xing.
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.profilePic }}" />
+
+{{ $urlString := .Site.Params.profilePic | absURL }}
+{{ $url := urls.Parse $urlString }}
+{{ $protocol := cond (eq ($url.Scheme) "") "https:" "" }}
+
+<meta property="og:image" content="{{ $protocol }}{{ $urlString }}" />
 <meta name="twitter:card" content="summary" />
 ```
 
-The curly braces are Hugo's string interpolation technique.
+The curly braces are used to do string interpolation in Hugo.
 It replaces the content attribute of `<meta>` with page or site-specific data.
+
+The implementation of figuring out the protocol isn't ideal. It should be hidden in a helper function which is used in the template, but I don't know how. 😉
 
 This was the first time I worked on an issue and wrote down what I was doing.
 It was fun.
-By the way, here is the [commit](https://github.com/FQ400/dev-coach-site/commit/4d09090fc4bc4a767a78eecec8c9b68ebdf08e47)
-
+By the way, here are the commits: [commit 1](https://github.com/FQ400/dev-coach-site/commit/4d09090fc4bc4a767a78eecec8c9b68ebdf08e47), [commit 2](https://github.com/FQ400/dev-coach-site/commit/7d314d358b4d8f5a37ffc7e588a56658ccf251bb)
