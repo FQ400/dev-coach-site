@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Adding &lt;meta&gt; elements to get a Twitter preview</title>
+        <meta property="og:title" content="Adding &lt;meta&gt; elements to get a Twitter preview" />
+
+        
+          <meta name="description" content="What &lt;meta&gt; elements are needed to get a Twitter preview? How to add them using the Hugo static site generator."/>
+          <meta property="og:description" content="What &lt;meta&gt; elements are needed to get a Twitter preview? How to add them using the Hugo static site generator." />
+        
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="//dev-coach.me/posts/adding-metadata-for-a-tweet-preview/" />
+
+        
+        
+        
+
+
+        <meta property="og:image" content="//dev-coach.me/profile_pic.jpg" />
+        <meta name="twitter:card" content="summary" />
+
+        
+        <style>
+
+    html body {
+        font-family: Open Sans, Helvetica, Arial, sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: blue;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="//dev-coach.me/css/main.css">
+
+
+ <link rel="stylesheet" href="//dev-coach.me/custom.css"> 
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <meta name="generator" content="Hugo 0.68.3" />
+        
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Adding &lt;meta&gt; elements to get a Twitter preview</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/snippets/">Snippets</a></li>
+                            
+                                <li><a href="/about">About</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/FQ400/dev-coach-site"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/FQ400"><i class="fa fa-twitter"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Adding &lt;meta&gt; elements to get a Twitter preview</h2>
+        
+<a href="//dev-coach.me/tags/learning"><kbd class="item-tag">learning</kbd></a>
+
+<a href="//dev-coach.me/tags/hugo"><kbd class="item-tag">hugo</kbd></a>
+
+<a href="//dev-coach.me/tags/html"><kbd class="item-tag">html</kbd></a>
+
+<a href="//dev-coach.me/tags/twitter"><kbd class="item-tag">twitter</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><p>As you might know, this blog is made using <a href=https://gohugo.io/  target="_blank"  rel="noopener" title=>
+  Hugo
+</a>
+ with the <a href=https://github.com/FQ400/minimal  target="_blank"  rel="noopener" title=>
+  minimal theme
+</a>
+. When a post is shared on Twitter, I like to have a nice post preview.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">TODO! Figure out what data needs to present on a webpage to get a tweet preview. <a href="https://t.co/bMJA5uCZ4z">https://t.co/bMJA5uCZ4z</a></p>&mdash; FQ400 (@FQ400) <a href="https://twitter.com/FQ400/status/1308789001990664195?ref_src=twsrc%5Etfw">September 23, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>This post is about figuring out what I need to add to the page.</p>
+<h3 id="some-basics">Some Basics</h3>
+<p>In general social media platforms use a service/bot that fetches a page, looks for certain data, and extracts it to use it for their purpose.</p>
+<p>HTML is a common option to represent a website.
+It structures the content and adds semantic meaning to content.
+These semantics can be used by services or bots to easily extract specific data.</p>
+<p>The <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta  target="_blank"  rel="noopener" title=>
+  <code>&lt;meta&gt;</code> element
+</a>
+ is used to describe the document. It contains data that describes data. 😉</p>
+<h3 id="twitter-cards">Twitter Cards</h3>
+<p><a href=https://twitter.com/coderbyheart  target="_blank"  rel="noopener" title=>
+  @coderbyheart
+</a>
+ pointed me to the <a href=https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started  target="_blank"  rel="noopener" title=>
+  documentation of Twitter Cards
+</a>
+.</p>
+<p>Twitter&rsquo;s preview service understands among others the following meta elements:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;twitter:card&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;summary&#34;</span> /&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;twitter:title&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Page title&#34;</span>&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;twitter:description&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Describe the post&#34;</span> /&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;twitter:image&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://site.com/post/image.jpg&#34;</span>&gt;
+</code></pre></div><p>The data contains a <strong>card type</strong>, a <strong>title</strong>, a <strong>description</strong>, and a location of an <strong>image</strong>.</p>
+<p>Adding these <code>&lt;meta&gt;</code> elements to the page solves the preview issue. 👍🏽</p>
+<p>To validate that it works Twitter provides a <a href=https://cards-dev.twitter.com/validator  target="_blank"  rel="noopener" title=>
+  Card Validator
+</a>
+. Debugging one URL multiple times a URL shortener like <a href=https://bitly.com/  target="_blank"  rel="noopener" title=>
+  bit.ly
+</a>
+ can be used in compination with different URL parameters.</p>
+<p>💥 <strong>Important:</strong> The image URL has to have a protocol, like <code>http://site.com/post/image.jpg</code>. Protocal-agnostic URLs like <code>//site.com/post/image.jpg</code> do not work.</p>
+<h3 id="going-one-step-further">Going one step further</h3>
+<p>Twitter&rsquo;s preview service understands <a href=https://ogp.me/  target="_blank"  rel="noopener" title=>
+  The Open Graph protocol
+</a>
+.
+The open graph was created by Facebook to enrich web pages with metadata to turn them into a graph object.</p>
+<p>There are 4 basic required properties:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:title&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Title of the post&#34;</span> /&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:type&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;website&#34;</span> /&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:url&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://site.com/post/1&#34;</span> /&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:image&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://site.com/post/image.jpg&#34;</span> /&gt;
+</code></pre></div><p>This data contains a <strong>title</strong>, a <strong>type</strong>, a canonical <strong>url</strong> and a location of an <strong>image</strong>.</p>
+<p>The reason why I consider the open graph is, combining the twitter metadata with the open graph metadata gives this blog previews in major social network posts
+and I don&rsquo;t have to duplicate similar metadata.
+I tested it with Twitter, Facebook, Linkedin, and Xing.</p>
+<h3 id="here-is-my-solution">Here is my solution</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:title&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Title }}&#34;</span> /&gt;
+
+{{ if .Description }}
+  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;description&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Description }}&#34;</span>/&gt;
+  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:description&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Description }}&#34;</span> /&gt;
+{{ end }}
+
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:type&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;website&#34;</span> /&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:url&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span> /&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:image&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.BaseURL }}{{ .Site.Params.profilePic }}&#34;</span> /&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;twitter:card&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;summary&#34;</span> /&gt;
+</code></pre></div><p>The curly braces are Hugo&rsquo;s string interpolation technique.
+It replaces the content attribute of <code>&lt;meta&gt;</code> with page or site-specific data.</p>
+<p>This was the first time I worked on an issue and wrote down what I was doing.
+It was fun.
+By the way, here is the <a href=https://github.com/FQ400/dev-coach-site/commit/4d09090fc4bc4a767a78eecec8c9b68ebdf08e47  target="_blank"  rel="noopener" title=>
+  commit
+</a>
+</p>
+</div>
+    <p class='dates'>
+  <i>
+    Created at
+    <time dateime="2020-09-24 00:00:00 &#43;0000 UTC">
+      September 24, 2020
+    </time>
+    
+      <br />
+      Updated at
+      <time dateime="2020-09-25 00:00:00 &#43;0000 UTC">
+        September 25, 2020
+      </time>
+    
+  </i>
+</p>
+
+
+</main>
+
+        <footer>
+          
+            <ul>
+              
+                <li><a href="/imprint">Imprint</a></li>
+              
+            </ul>
+          
+          <p class="copyright text-muted text-center">Copyright 2020 - Carsten Lamm</p>
+        </footer>
+        
+
+
+
+ <script src="//dev-coach.me/custom.js"></script> 
+
+
+        
+<script async defer data-domain="dev-coach.me" src="https://plausible.io/js/plausible.js"></script>
+
+    </body>
+
+</html>
+
