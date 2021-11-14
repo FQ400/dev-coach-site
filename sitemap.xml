@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//dev-coach.me/tags/editor/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/ide/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/snippets/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/tips/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/tags/tools/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//dev-coach.me/snippets/your-editor-is-your-friend-not-your-enemy/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//dev-coach.me/posts/adding-metadata-for-a-tweet-preview/</loc>
     <lastmod>2020-09-25T00:00:00+00:00</lastmod>
   </url>
@@ -28,11 +63,6 @@
   </url>
   
   <url>
-    <loc>//dev-coach.me/tags/</loc>
-    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//dev-coach.me/tags/twitter/</loc>
     <lastmod>2020-09-25T00:00:00+00:00</lastmod>
   </url>
@@ -53,17 +83,7 @@
   </url>
   
   <url>
-    <loc>//dev-coach.me/snippets/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//dev-coach.me/tags/snippets/</loc>
-    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//dev-coach.me/tags/tools/</loc>
     <lastmod>2020-09-23T00:00:00+00:00</lastmod>
   </url>
   

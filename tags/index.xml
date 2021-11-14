@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Dev-Coach</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Nov 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//dev-coach.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>editor</title>
+      <link>//dev-coach.me/tags/editor/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDE</title>
+      <link>//dev-coach.me/tags/ide/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>//dev-coach.me/tags/tips/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>//dev-coach.me/tags/tools/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/tags/tools/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>html</title>
@@ -71,15 +107,6 @@
       <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>//dev-coach.me/tags/snippets/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tools</title>
-      <link>//dev-coach.me/tags/tools/</link>
-      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>//dev-coach.me/tags/tools/</guid>
       <description></description>
     </item>
     

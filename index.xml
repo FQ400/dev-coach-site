@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Your editor is your friend not your enemy</title>
+      <link>//dev-coach.me/snippets/your-editor-is-your-friend-not-your-enemy/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>//dev-coach.me/snippets/your-editor-is-your-friend-not-your-enemy/</guid>
+      <description>Recently I was pairing with a less experienced developer, which was a great learning opportunity for me after I changed my point of view. I had the impression that we are slow and I started to become impatient. That feeling wasn&amp;rsquo;t a good one, and I didn&amp;rsquo;t like me feeling this strain. So I started analyzing what exactly slowed us down.
+When I say editor I mean any text editor or IDE (Integrated Development Environment).</description>
+    </item>
+    
+    <item>
       <title>Adding &lt;meta&gt; elements to get a Twitter preview</title>
       <link>//dev-coach.me/posts/adding-metadata-for-a-tweet-preview/</link>
       <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
